@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import heroImg from "@/public/images/heroImg.jpg";
 
-function hero() {
+function Hero() {
   return (
-    <div className="h-screen">
+    <div className="relative h-screen w-full">
       <Image
         alt="Picture of the author"
         src={heroImg}
@@ -12,8 +12,9 @@ function hero() {
         objectFit="cover"
         objectPosition="center"
       />
+      <div className="absolute inset-0 bg-black bg-opacity-15"></div>
     </div>
   );
 }
 
-export default hero;
+export default Hero;
