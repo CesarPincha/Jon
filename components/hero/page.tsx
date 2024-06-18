@@ -13,7 +13,7 @@ function Hero() {
   const words = ["Affordable", "Reliable", "Flexible"];
 
   return (
-    <div className="relative h-screen w-full items-center justify-center align-middle">
+    <div className="relative h-screen w-full items-center justify-center text-center">
       <Image
         alt="Picture of the author"
         src={heroImg}

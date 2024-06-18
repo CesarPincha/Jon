@@ -3,6 +3,7 @@ import contentData from "@/data/scrollData";
 import Hero from "@/components/hero/page";
 import About from "@/components/about/page";
 import Navbar from "@/components/navbar/page";
+import { ParallaxScrollDemo } from "@/components/carousel/page";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <ParallaxScrollDemo />
       {/* <div className="w-[70vw] h-[100vh]">
         <StickyScroll content={contentData} />
       </div> */}
