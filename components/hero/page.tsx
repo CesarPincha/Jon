@@ -13,7 +13,7 @@ function Hero() {
   const words = ["Affordable", "Reliable", "Flexible"];
 
   return (
-    <div className="relative h-screen w-full items-center justify-center text-center">
+    <div className="relative h-screen w-full flex items-center justify-center text-center">
       <Image
         alt="Picture of the author"
         src={heroImg}
@@ -22,21 +22,18 @@ function Hero() {
         objectPosition="center"
       />
       <div className="absolute inset-0 bg-black bg-opacity-45"></div>
-      <div className="h-[50rem] flex justify-center items-center px-4">
-        <div
-          className={`${anton.className} text-7xl z-10 font-normal text-white w-[50vw]`}
-        >
-          Build
-          <FlipWords words={words} className="text-white" />
-          <br />
-          <h2
-            className="font-1xl quicksand text-white"
-            style={{
-              fontSize: "3rem",
-              fontFamily: "quicksand",
-              fontWeight: "light",
-            }}
-          >
+      <div className="relative z-20 flex flex-col items-center justify-center px-4">
+        <div className="text-8xl text-white font-coachella font-bold flex flex-col items-center">
+          <div className="flex items-center justify-center">
+            <span>Build</span>
+            <span className="text-center ml-2" style={{ width: "6ch" }}>
+              <FlipWords
+                words={words}
+                className="text-white inline-block text-6xl"
+              />
+            </span>
+          </div>
+          <h2 className="text-4xl text-white font-coachella font-bold mt-4">
             With Rooftop Solutions
           </h2>
         </div>

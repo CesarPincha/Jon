@@ -9,7 +9,7 @@ import Image from "next/image";
 export function ParallaxScrollDemo() {
   return (
     <div className="flex flex-col lg:flex-row h-screen">
-      <div className="flex-1">
+      <div className="flex-1 h-[60vw] justify-center my-auto">
         <ParallaxScroll images={images} />
       </div>
       <div className="flex-1 flex text-center justify-center items-center p-4">
