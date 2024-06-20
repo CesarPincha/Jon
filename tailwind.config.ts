@@ -18,6 +18,17 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        coachella: ['var(--font-coachella)', 'sans-serif'],
+      },
+      fontWeight: {
+        regular: '400',
+        bold: '700',
+        light: '300',
+        black: '900',
+        medium: '500',
+        thin: '100',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
