@@ -22,18 +22,21 @@ function Hero() {
         objectPosition="center"
       />
       <div className="absolute inset-0 bg-black bg-opacity-45"></div>
-      <div className="relative z-20 flex flex-col items-center justify-center px-4">
+      <div className="relative z-20 flex flex-col items-center justify-center ">
         <div className="text-8xl text-white font-coachella font-bold flex flex-col items-center">
-          <div className="flex items-center justify-center">
-            <span>Build</span>
-            <span className="text-center ml-2" style={{ width: "6ch" }}>
+          <div className="flex items-center justify-center h-8">
+            <span className="text-[50px]">Build</span>
+            <span
+              className="text-center items-center justify-center  mt-[-1.4rem]"
+              style={{ width: "6ch" }}
+            >
               <FlipWords
                 words={words}
-                className="text-white inline-block text-6xl"
+                className="text-white text-6xl text-center"
               />
             </span>
           </div>
-          <h2 className="text-4xl text-white font-coachella font-bold mt-4">
+          <h2 className="text-2xl text-white font-coachella font-bold mt-2">
             With Rooftop Solutions
           </h2>
         </div>

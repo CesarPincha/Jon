@@ -1,8 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import logo from "@/public/images/logo/logo.jpeg";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const page = () => {
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
+
+const Page = () => {
   return (
     <div className="flex z-20 absolute w-full items-center text-white">
       <div className="flex-1">
@@ -11,13 +19,34 @@ const page = () => {
       <div className="flex-1 flex justify-end">
         <ul className="flex flex-row gap-4 pr-4 text-[20px]">
           <li>Home</li>
-          <li>About</li>
-          <li>Gallery</li>
-          <li>Contact</li>
+          <li>
+            <a
+              onClick={() => scrollToSection("about")}
+              className="cursor-pointer"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => scrollToSection("gallery")}
+              className="cursor-pointer"
+            >
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => scrollToSection("contact")}
+              className="cursor-pointer"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;

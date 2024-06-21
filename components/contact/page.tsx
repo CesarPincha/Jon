@@ -83,7 +83,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen w-full">
+    <div
+      id="contact"
+      className="contact relative flex items-center justify-center min-h-screen w-full"
+    >
       <Image
         src={car1}
         alt="car"

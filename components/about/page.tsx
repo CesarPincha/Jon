@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import aboutPic from "../../public/images/aboutPic.jpg";
 
+
 const page = () => {
   return (
-    <div className="flex lg:flex-row flex-col h-screen ">
+    <div id="about" className="about flex lg:flex-row flex-col h-screen ">
       <div className="flex-1 flex flex-col justify-center items-center text-center m-4 ">
         <h1 className="text-4xl text-balance">Rooftop Solutions</h1>
         <p className="p-4 text-balance">
