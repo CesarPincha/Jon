@@ -2,13 +2,17 @@ import React from "react";
 import Image from "next/image";
 import aboutPic from "../../public/images/aboutPic.jpg";
 
-
-const page = () => {
+const About = () => {
   return (
-    <div id="about" className="about flex lg:flex-row flex-col h-screen ">
-      <div className="flex-1 flex flex-col justify-center items-center text-center m-4 ">
-        <h1 className="text-4xl text-balance">Rooftop Solutions</h1>
-        <p className="p-4 text-balance">
+    <div
+      id="about"
+      className="about flex lg:flex-row flex-col min-h-screen pt-16"
+    >
+      <div className="flex-1 flex flex-col justify-center items-center text-center m-4">
+        <h1 className="p-4 sm:text-2xl lg:text-6xl font-coachella font-bold">
+          Rooftop Solutions
+        </h1>
+        <p className="p-4  text-start">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Reprehenderit iure eveniet cum expedita iusto accusamus possimus
           itaque, eligendi dolorum, neque nemo commodi et, ratione quas minus
@@ -17,7 +21,7 @@ const page = () => {
           suscipit quibusdam facilis corporis deleniti incidunt asperiores
           officiis!
         </p>
-        <p className="p-4 text-balance">
+        <p className="p-4 text-start ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
           ratione ducimus impedit corrupti est quos modi cumque in recusandae
           voluptas! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -25,15 +29,19 @@ const page = () => {
           iste quam voluptates et officia explicabo necessitatibus inventore?
         </p>
       </div>
-      <div className="flex-1 flex justify-center items-center text-center p-4  rounded-md">
+      <div className="flex-1 flex justify-center items-center text-center p-4 rounded-md">
         <Image
-          className="rounded-md shadow-lg shadow-black h-[700px] w-[500px]"
+          className="rounded-md shadow-lg shadow-black"
           alt="Picture of the author"
           src={aboutPic}
+          quality={100}
+          layout="intrinsic"
+          width={500}
+          height={600}
         />
       </div>
     </div>
   );
 };
 
-export default page;
+export default About;

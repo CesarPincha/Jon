@@ -30,11 +30,11 @@ export const ParallaxScroll = ({
 
   return (
     <div
-      className={cn("h-full items-center overflow-y-auto w-full", className)}
+      className={cn("h-full items-center overflow-y-auto ", className)}
       ref={gridRef}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl  gap-10 py-10 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start    gap-3 py-10 px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">
@@ -46,9 +46,10 @@ export const ParallaxScroll = ({
               <Image
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
+                height="300"
+                width="300"
                 alt="thumbnail"
+                quality={100}
               />
             </motion.div>
           ))}
@@ -59,9 +60,10 @@ export const ParallaxScroll = ({
               <Image
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
+                height="300"
+                width="300"
                 alt="thumbnail"
+                quality={100}
               />
             </motion.div>
           ))}
@@ -72,9 +74,10 @@ export const ParallaxScroll = ({
               <Image
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
+                height="300"
+                width="300"
                 alt="thumbnail"
+                quality={100}
               />
             </motion.div>
           ))}

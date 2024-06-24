@@ -21,6 +21,9 @@ const config = {
       fontFamily: {
         coachella: ['var(--font-coachella)', 'sans-serif'],
       },
+      width: {
+        '6ch': '6ch',
+      },
       fontWeight: {
         regular: '400',
         bold: '700',

@@ -8,15 +8,17 @@ import { ParallaxScrollDemo } from "@/components/carousel/page";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-start">
+    <div className="relative flex flex-col items-center justify-start">
       <Navbar />
-      <Hero />
-      <About />
-      <ParallaxScrollDemo />
-      <Contact />
-      {/* <div className="w-[70vw] h-[100vh]">
-        <StickyScroll content={contentData} />
-      </div> */}
-    </main>
+      <main className="w-full">
+        <Hero />
+        <About />
+        <ParallaxScrollDemo />
+        <Contact />
+        {/* <div className="w-[70vw] h-[100vh]">
+          <StickyScroll content={contentData} />
+        </div> */}
+      </main>
+    </div>
   );
 }

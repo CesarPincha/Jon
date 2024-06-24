@@ -18,7 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import car1 from "@/public/images/car1.jpg";
+import contact from "@/public/images/contact.jpeg";
 import CustomForm from "@/components/customForm/page"; // Adjust the path accordingly
 
 const formSchema = z.object({
@@ -87,14 +87,9 @@ export default function Contact() {
       id="contact"
       className="contact relative flex items-center justify-center min-h-screen w-full"
     >
-      <Image
-        src={car1}
-        alt="car"
-        layout="fill"
-        objectFit="cover"
-        className="z-0"
-      />
-      <div className="absolute bg-white bg-opacity-80 p-8 rounded-lg shadow-md w-full max-w-md z-10">
+      <Image src={contact} alt="car" fill quality={100} className="z-0" />
+      <div className="absolute inset-0 bg-black bg-opacity-45"></div>
+      <div className="absolute bg-white bg-opacity-80 p-8 rounded-lg shadow-md  max-w-md z-10 w-[80vw]">
         {showMessage ? (
           <m.div
             initial={{ opacity: 0 }}
