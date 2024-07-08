@@ -13,20 +13,28 @@ const About = () => {
           Rooftop Solutions
         </h1>
         <p className="p-4  text-start">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Reprehenderit iure eveniet cum expedita iusto accusamus possimus
-          itaque, eligendi dolorum, neque nemo commodi et, ratione quas minus
-          aut architecto cumque ea ut recusandae consectetur natus? Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Quae est, nemo harum
-          suscipit quibusdam facilis corporis deleniti incidunt asperiores
-          officiis!
+          At Rooftop Solutions, our primary goal is to provide top-tier roofing
+          services that exceed customer expectations. We strive to deliver
+          quality craftsmanship and exceptional service in every project we
+          undertake, ensuring durability and satisfaction. Our dedication to
+          excellence drives us to continually innovate and adopt the latest
+          industry practices, making us a leader in the roofing sector.
         </p>
         <p className="p-4 text-start ">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-          ratione ducimus impedit corrupti est quos modi cumque in recusandae
-          voluptas! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Cupiditate aliquid, reprehenderit ducimus harum doloribus deleniti
-          iste quam voluptates et officia explicabo necessitatibus inventore?
+          Our company culture is built on the pillars of integrity, teamwork,
+          and continuous improvement. We believe in fostering a collaborative
+          environment where every team member is valued and empowered to
+          contribute their best. This collective effort ensures that we not only
+          meet but exceed the standards of quality and safety in our work,
+          creating roofs that stand the test of time.
+        </p>
+        <p className="p-4 text-start ">
+          Rooftop Solutions is committed to sustainability and community
+          involvement. We use eco-friendly materials and practices to minimize
+          our environmental footprint, and we actively participate in local
+          initiatives to give back to the community. Our mission is to build
+          strong, lasting relationships with our clients and partners, grounded
+          in trust and mutual respect.
         </p>
       </div>
       <div className="flex-1 flex justify-center items-center text-center p-4 rounded-md">

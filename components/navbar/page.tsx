@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "@/public/images/logo/logo.jpeg";
+import logo from "@/public/images/logo/logoDef.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const scrollToSection = (id: string) => {
@@ -16,7 +16,12 @@ const Page = () => {
     <div className="flex z-20 w-full items-center text-white fixed">
       <div className="absolute inset-0 bg-slate-700 bg-opacity-45"></div>
       <div className="flex-1">
-        <Image className="h-[70px] w-[70px] ml-4" src={logo} alt="LOGO" />
+        <Image
+          className="h-[70px] w-[90px] ml-4 z-60 relative"
+          src={logo}
+          alt="LOGO"
+          priority={true}
+        />
       </div>
       <div className="flex-1 flex justify-end">
         <div className="block md:hidden pr-4 z-50">
