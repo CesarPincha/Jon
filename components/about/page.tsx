@@ -6,11 +6,11 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about flex lg:flex-row flex-col min-h-screen pt-16"
+      className="about flex lg:flex-row flex-col min-h-screen pt-16 items-center justify-center"
     >
-      <div className="flex-1 flex flex-col justify-center items-center text-center m-4">
+      <div className="flex-1 flex flex-col justify-center items-center text-center m-4 lg:max-w-[50vw]">
         <h1 className="p-4 sm:text-2xl lg:text-6xl font-coachella font-bold">
-          Rooftop Solutions
+          RoofTop Solutions
         </h1>
         <p className="p-4  text-start">
           An old Irish Proverb reads “May the roof above us never fall in. And
@@ -45,7 +45,7 @@ const About = () => {
           enough.
         </p>
       </div>
-      <div className="flex-1 flex justify-center items-center text-center p-4 rounded-md">
+      {/* <div className="flex-1 flex justify-center items-center text-center p-4 rounded-md">
         <Image
           className="rounded-md shadow-lg shadow-black"
           alt="Picture of the author"
@@ -55,7 +55,7 @@ const About = () => {
           width={500}
           height={600}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

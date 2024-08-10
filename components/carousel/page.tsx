@@ -1,10 +1,16 @@
 "use client";
 import { ParallaxScroll } from "../ui/parallax-scroll";
-import car1 from "@/public/images/car1.jpg";
-import car2 from "@/public/images/car2.jpg";
-import car7 from "@/public/images/car7.jpeg";
-import car6 from "@/public/images/car6.jpeg";
-import car5 from "@/public/images/car5.jpeg";
+
+import p2 from "@/public/images/p2.jpeg";
+import p3 from "@/public/images/p3.jpeg";
+import p4 from "@/public/images/p4.jpeg";
+import p5 from "@/public/images/p5.jpeg";
+import p6 from "@/public/images/p6.jpeg";
+import p7 from "@/public/images/p7.jpeg";
+import p8 from "@/public/images/p8.jpeg";
+import p9 from "@/public/images/p9.jpeg";
+import p10 from "@/public/images/p10.jpeg";
+import p11 from "@/public/images/p11.jpeg";
 import Image from "next/image";
 
 export function ParallaxScrollDemo() {
@@ -47,22 +53,16 @@ export function ParallaxScrollDemo() {
 }
 
 const images = [
-  car6.src,
-  car5.src,
-  car2.src,
-  car7.src,
-  car6.src,
-  car2.src,
-  car7.src,
-  car1.src,
-  car6.src,
-  car5.src,
-  car7.src,
-  car2.src,
-  car1.src,
-  car6.src,
-  car5.src,
-  car1.src,
-  car2.src,
-  car5.src,
+  p2.src,
+  p3.src,
+  p4.src,
+  p5.src,
+  p6.src,
+  p7.src,
+  p8.src,
+  p9.src,
+  p10.src,
+  p11.src,
+  p6.src,
+  p3.src,
 ];

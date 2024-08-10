@@ -2,6 +2,9 @@
   @tailwind components;
   @tailwind utilities;
 
+  
+  html{scroll-behavior: smooth;}
+
   @layer base {
     :root {
       --font-coachella: 'Coachella', sans-serif;
@@ -77,5 +80,6 @@
     body {
       @apply bg-background text-foreground;
       font-family: var(--font-coachella);
-    }
+    };
+    
   }
