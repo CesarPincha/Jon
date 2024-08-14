@@ -6,13 +6,13 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about flex lg:flex-row flex-col min-h-screen pt-16 items-center justify-center"
+      className="about flex lg:flex-row flex-col min-h-screen pt-16 items-center justify-center  "
     >
       <div className="flex-1 flex flex-col justify-center items-center text-center m-4 lg:max-w-[50vw]">
-        <h1 className="p-4 sm:text-2xl lg:text-6xl font-coachella font-bold">
+        <h1 className="p-4 text-2xl lg:text-6xl font-coachella font-bold">
           RoofTop Solutions
         </h1>
-        <p className="p-4  text-start">
+        <p className="p-4 text-lg text-start">
           An old Irish Proverb reads “May the roof above us never fall in. And
           may us friends gathered below it never fall out.” We at RoofTop
           Solutions believe we make sure your roof never falls in, and we are
@@ -21,7 +21,7 @@ const About = () => {
           Lockport, graduated from Jesuit High School, and played college
           baseball at Loyola University in New Orleans.
         </p>
-        <p className="p-4 text-start ">
+        <p className="p-4 text-lg text-start ">
           With over 18 years of experience in the roofing industry that
           followed, I know the challenges Louisiana homeowners face. No, it’s
           not weather events or hurricanes. Those things we cannot control, but
@@ -36,7 +36,7 @@ const About = () => {
           who really has their best interest in mind and who’s trying to make a
           quick buck.
         </p>
-        <p className="p-4 text-start ">
+        <p className="p-4 text-lg text-start ">
           At RoofTop Solutions, we combine experience with integrity. If we
           wouldn’t do it on our own house, we wouldn’t do it on yours. We have
           to sleep at night, and sleeping at night is knowing that we did the

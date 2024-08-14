@@ -4,6 +4,7 @@ import Contact from "@/components/contact/page";
 import Hero from "@/components/hero/page";
 import About from "@/components/about/page";
 import Navbar from "@/components/navbar/page";
+import RoofTop from "@/components/roofTop/page";
 import { ParallaxScrollDemo } from "@/components/carousel/page";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <ParallaxScrollDemo />
+        <RoofTop />
         <Contact />
         {/* <div className="w-[70vw] h-[100vh]">
           <StickyScroll content={contentData} />
