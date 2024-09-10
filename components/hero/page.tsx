@@ -2,11 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import heroImg from "@/public/images/heroImg.jpg";
+import atlasLogo from "@/public/images/logo/atlasLogo.jpg";
+import landLogo from "@/public/images/logo/landmarkPro.png";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Anton } from "next/font/google";
 import logo from "@/public/images/logo/logoDef.png";
 import HeroImg2 from "@/public/images/fortified-logo-roof.png";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -51,10 +53,16 @@ function Hero() {
           <h2 className="text-2xl text-white font-coachella font-bold p-4">
             With <br />
           </h2> */}
-          <h3 className="text-6xl">SUPERIOR SERVICES</h3>
+          <h3 className="text-2xl">SUPERIOR SERVICES</h3>
           <div className="flex justify-center items-center gap-2">
             <FaPhone className="text-2xl" />
-            <h3 className="text-4xl my-4">(504)-337-8683</h3>
+            <h3 className="text-lg my-4">(504)-377-8683</h3>
+          </div>
+          <div className="flex justify-center items-center gap-2">
+            <FaMapMarkerAlt className="text-2xl" />
+            <h3 className="text-lg my-4">
+              327 Red Maple Dr Mandeville, LA 70448
+            </h3>
           </div>
           <Image src={HeroImg2} alt="foto" className="h-40 w-80 m-4" />
           <div>
@@ -63,6 +71,60 @@ function Hero() {
                 CONTACT US FOR A QUOTE
               </Button>
             </Link>
+          </div>
+          <div className="flex overflow-hidden space-x-16 gap-4">
+            <div className="flex animate-loop-sroll gap-4 w-screen">
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={atlasLogo}
+                alt="LOGO"
+                priority={true}
+              />
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={landLogo}
+                alt="LOGO"
+                priority={true}
+              />
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={atlasLogo}
+                alt="LOGO"
+                priority={true}
+              />
+              <Image
+                src={landLogo}
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                alt="LOGO"
+                priority={true}
+              />
+            </div>
+            <div className="flex animate-loop-sroll gap-4">
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={atlasLogo}
+                alt="LOGO"
+                priority={true}
+              />
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={landLogo}
+                alt="LOGO"
+                priority={true}
+              />
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={atlasLogo}
+                alt="LOGO"
+                priority={true}
+              />
+              <Image
+                className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
+                src={landLogo}
+                alt="LOGO"
+                priority={true}
+              />
+            </div>
           </div>
         </div>
       </div>

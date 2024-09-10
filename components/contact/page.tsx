@@ -35,6 +35,7 @@ const formSchema = z.object({
 
 export default function Contact() {
   const [showMessage, setShowMessage] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); // New state for disabling the button
   const form = useRef<HTMLFormElement | null>(null);
   const methods = useForm({
     resolver: zodResolver(formSchema),
@@ -47,38 +48,33 @@ export default function Contact() {
     reset,
   } = methods;
 
-  const sendEmail = (data: any) => {
+  const sendEmail = async (data: any) => {
     console.log("Form submission started");
+    setIsSubmitting(true); // Disable button when submitting
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          "service_pmps2ka",
-          "template_7rde9sc",
+      try {
+        const result = await emailjs.sendForm(
+          "service_167e56m",
+          "template_zqxea6s",
           form.current,
-          "hhavqmlJI_oNtc7Gf"
-        )
-        .then(
-          (result) => {
-            console.log("Email sent successfully:", result.text);
-            setShowMessage(true);
-            reset(); // Clear the form
-            setTimeout(() => {
-              setShowMessage(false);
-            }, 2000);
-          },
-          (error) => {
-            console.error("Error sending email:", error.text);
-            alert("Something went wrong");
-          }
-        )
-        .catch((error) => {
-          console.error("Catch block error:", error);
-        });
+          "00rU5neDOKL1fqFmP"
+        );
+        console.log("Email sent successfully:", result.text);
+        setShowMessage(true);
+        reset(); // Clear the form
+        setTimeout(() => {
+          setShowMessage(false);
+        }, 2000);
+      } catch (error) {
+        console.error("Error sending email:", error);
+        alert("Something went wrong. Please try again.");
+      }
     } else {
       console.error("Form reference is undefined.");
     }
 
+    setIsSubmitting(false); // Enable button again
     console.log("Form submission ended");
   };
 
@@ -114,7 +110,11 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel>Your Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="name" {...field} />
+                      <Input
+                        placeholder="name"
+                        {...field}
+                        value={field.value || ""} // Ensure controlled input
+                      />
                     </FormControl>
                     <FormDescription></FormDescription>
                     {errors.user_name?.message && (
@@ -132,7 +132,11 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="example@example.com" {...field} />
+                      <Input
+                        placeholder="example@example.com"
+                        {...field}
+                        value={field.value || ""} // Ensure controlled input
+                      />
                     </FormControl>
                     {errors.user_email?.message && (
                       <FormMessage>
@@ -149,7 +153,11 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel>Your Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Your message" {...field} />
+                      <Textarea
+                        placeholder="Your message"
+                        {...field}
+                        value={field.value || ""} // Ensure controlled input
+                      />
                     </FormControl>
                     {errors.message?.message && (
                       <FormMessage>
@@ -159,8 +167,8 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
-                Send
+              <Button type="submit" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send"}
               </Button>
             </CustomForm>
           </FormProvider>
