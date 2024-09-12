@@ -71,9 +71,7 @@ function Hero() {
                 CONTACT US FOR A QUOTE
               </Button>
             </Link>
-          </div>
-          <div className="flex overflow-hidden space-x-16 gap-4">
-            <div className="flex animate-loop-sroll gap-4 w-screen">
+            {/* <div className="flex animate-loop-sroll gap-4 w-screen">
               <Image
                 className="h-[100px] w-[180px]  items-center justify-center mt-8 ml-8"
                 src={atlasLogo}
@@ -124,7 +122,7 @@ function Hero() {
                 alt="LOGO"
                 priority={true}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

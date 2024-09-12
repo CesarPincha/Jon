@@ -55,10 +55,10 @@ export default function Contact() {
     if (form.current) {
       try {
         const result = await emailjs.sendForm(
-          "service_167e56m",
-          "template_zqxea6s",
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
           form.current,
-          "00rU5neDOKL1fqFmP"
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID || ""
         );
         console.log("Email sent successfully:", result.text);
         setShowMessage(true);
